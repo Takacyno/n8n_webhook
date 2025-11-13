@@ -1,0 +1,16 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ドキュメント受付フォーム</title>
+  </head>
+  <body>
+    <form action="https://your-n8n-host/webhook/pdf-intake" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="名前" required>
+      <input type="email" name="email" placeholder="メール" required>
+      <input type="file" name="file" accept=".pdf,.docx,application/pdf" required>
+      <button type="submit">送信</button>
+    </form>
+  </body>
+</html>
